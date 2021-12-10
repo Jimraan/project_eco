@@ -1,1 +1,5 @@
 <h1>To be: Index page</h1>
+
+<% @items.each do |i| %>
+    <%= link_to image_tag(i.picture, class: 'w-100 rounded shadow-lg d-block mx-auto', style: 'max-width: 40rem;'), item_path(i.id) %>
+<% end %>
